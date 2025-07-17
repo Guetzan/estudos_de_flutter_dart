@@ -1,9 +1,6 @@
-\## Repositório para armazenar o código dos meus estudos em Dart e Flutter
-
+## Repositório para armazenar o código dos meus estudos em Dart e Flutter
 
 ---
 
-
-
-&nbsp;  Repository to store the code for my studies in Dart and Flutter   
+Repository to store the code for my studies in Dart and Flutter   
 
