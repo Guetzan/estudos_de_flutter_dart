@@ -1,0 +1,9 @@
+/.idea/
+/.vscode/
+
+# stop non-target plataforms from being uploaded to the git repo 
+*/ios/
+*/linux/
+*/macos/
+*/windows/
+*/web/
