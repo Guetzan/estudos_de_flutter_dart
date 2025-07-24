@@ -26,7 +26,7 @@ class QuizTitle extends StatelessWidget {
 
           const SizedBox(height: 40),
 
-          FilledButton(
+          FilledButton.icon(
             style: FilledButton.styleFrom(
               foregroundColor: const Color.fromARGB(220, 255, 255, 255),
               backgroundColor: const Color.fromARGB(122, 9, 117, 241),
@@ -38,7 +38,8 @@ class QuizTitle extends StatelessWidget {
               ),
             ),
             onPressed: () => {},
-            child: const Text('❯  Start Quiz'),
+            icon: Icon(Icons.arrow_circle_right_sharp),
+            label: const Text('Start Quiz'),
           ),
         ],
       ),
