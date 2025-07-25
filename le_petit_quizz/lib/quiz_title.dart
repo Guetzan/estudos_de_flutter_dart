@@ -12,6 +12,7 @@ class QuizTitle extends StatelessWidget {
           Image.asset(
             'assets/images/quiz-logo.png',
             width: 240,
+            color: Color.fromARGB(220, 255, 255, 255),
           ),
 
           const SizedBox(height: 80),
@@ -38,7 +39,7 @@ class QuizTitle extends StatelessWidget {
               ),
             ),
             onPressed: () => {},
-            icon: Icon(Icons.arrow_circle_right_sharp),
+            icon: const Icon(Icons.arrow_circle_right_sharp),
             label: const Text('Start Quiz'),
           ),
         ],
