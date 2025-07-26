@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:le_petit_quizz/quiz_title.dart';
+import 'package:le_petit_quizz/questions.dart';
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
@@ -11,6 +12,14 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
+  Widget currentScreen = const QuizTitle();
+
+  void switchScreen() {
+    setState(() {
+      currentScreen = const Questions();
+    }); 
+  }
+
   @override
   Widget build(context) {
     return MaterialApp(
@@ -27,7 +36,7 @@ class _QuizState extends State<Quiz> {
             ),
           ),
 
-          child: const QuizTitle(),
+          child: currentScreen,
         ),
       ),
     );
