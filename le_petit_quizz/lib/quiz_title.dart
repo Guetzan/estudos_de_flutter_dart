@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class QuizTitle extends StatelessWidget {
-  const QuizTitle({super.key});
+  const QuizTitle(this.startQuiz, {super.key});
+
+  final void Function() startQuiz;
 
   @override
   Widget build(context) {
@@ -38,7 +40,7 @@ class QuizTitle extends StatelessWidget {
                 fontSize: 18,
               ),
             ),
-            onPressed: () => {},
+            onPressed: startQuiz,
             icon: const Icon(Icons.arrow_circle_right_sharp),
             label: const Text('Start Quiz'),
           ),
