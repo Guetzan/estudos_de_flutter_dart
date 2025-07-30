@@ -12,6 +12,8 @@ class Questions extends StatefulWidget {
 class _QuestionsState extends State<Questions> {
   @override 
   Widget build(context) {
-    return Text("WIP");
+    return Center(
+      child: Text("WIP"),
+    );
   }
 }
