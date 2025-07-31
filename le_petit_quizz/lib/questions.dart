@@ -19,7 +19,7 @@ class _QuestionsState extends State<Questions> {
         children: [
           Text('Question text'),
 
-          SizedBox(width: 80),
+          SizedBox(height: 80),
 
           FilledButton(
             onPressed: () => {},
