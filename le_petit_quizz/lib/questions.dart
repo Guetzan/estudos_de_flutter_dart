@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:le_petit_quizz/alternative_button.dart';
 
 class Questions extends StatefulWidget {
   const Questions({super.key});
@@ -17,22 +18,19 @@ class _QuestionsState extends State<Questions> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Question text'),
+          Text(
+            'Question text',
+            style: TextStyle(
+              color: Colors.white70,
+              fontSize: 20,
+            ),
+          ),
 
-          SizedBox(height: 80),
+          SizedBox(height: 40),
 
-          FilledButton(
-            onPressed: () => {},
-            child: Text('Alternative'),
-          ),
-          FilledButton(
-            onPressed: () => {},
-            child: Text('Alternative'),
-          ),
-          FilledButton(
-            onPressed: () => {},
-            child: Text('Alternative'),
-          ),
+          AlternativeButton(text: 'Alternative 1', action: () => {}),
+          AlternativeButton(text: 'Alternative 2', action: () => {}),
+          AlternativeButton(text: 'Alternative 3', action: () => {}),
         ],
       ),
     );
